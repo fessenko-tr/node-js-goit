@@ -27,6 +27,7 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case "get":
       const contactById = await getContactById(id);
+      console.log(contactById);
       break;
 
     case "add":
